@@ -1,0 +1,154 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333; 
+}
+
+#header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+}
+
+.chart-tooltip {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background-color: #fff; 
+    color: #333;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.x-axis-label {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    color: #888;
+}
+
+#stock-chart {
+    background-color: #fff; 
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 10px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#stock-chart button {
+    background-color: #007bff; 
+    font-size: 18px;
+    color: #fff; 
+    border-radius: 20px;
+    border: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chart-canvas {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#stock-chart button:hover {
+    opacity: 0.8;
+    background-color: #0056b3; 
+    color: #fff;
+}
+
+#summary {
+    margin-top: 20px;
+    width: 60%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#summary p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+#name, #profit, #bookValue {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333;
+}
+
+#container {
+    display: flex;
+}
+
+#stock-list {
+    position: absolute;
+    right: 80px;
+}
+
+.list {
+    position: relative;
+    right: 0;
+    height: 30px;
+    width: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.list span {
+    margin-right: 10px;
+}
+
+#button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.list_i span {
+    margin: 10px;
+}
+
+/* New styles added below */
+
+.chart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chart-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
